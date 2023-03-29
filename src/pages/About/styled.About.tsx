@@ -65,7 +65,7 @@ export const StyleAboutTextContentContainer = styled.div`
     @media ${device.sm} {
       font-size: 3rem;
       line-height: ${(props) => props.theme.lineHeight.lhLarge};
-      margin: ${(props) => props.theme.paddings.navPadsSM};
+      /* margin: ${(props) => props.theme.paddings.navPadsSM}; */
     }
     @media ${device.xs} {
       font-size: 2.5rem;
@@ -112,9 +112,9 @@ export const StyleAboutTextContentContainer = styled.div`
     @media ${device.xs} {
       font-size: 0.6rem;
       line-height: ${(props) => props.theme.lineHeight.lhSmall};
-      margin: 1rem 2rem 0;
+      /* margin: 1rem 2rem 0; */
       width: 70%;
-      padding: ${(props) => props.theme.paddings.navPadsSM};
+      /* padding: ${(props) => props.theme.paddings.navPadsSM}; */
       background: green;
     }
   }
