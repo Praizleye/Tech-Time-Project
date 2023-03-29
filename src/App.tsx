@@ -1,7 +1,7 @@
 import styled, { ThemeProvider } from "styled-components";
 import { theme } from "./styles/Theme";
 import { GlobalStyles } from "./styles/Globals";
-
+import "./App.css";
 import { Navbar } from "./components";
 import {
   Home,
