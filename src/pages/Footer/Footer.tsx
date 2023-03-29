@@ -7,8 +7,10 @@ const Footer = () => {
       <div className="footer__container">
         <div className="footer__segment footer__segment-1">
           <img src={images.Logo} alt="logo-footer" />
-          <div>Reach out to us on any of our social media networks</div>
-          <div>
+          <div className="reach__text">
+            Reach out to us on any of our social media networks
+          </div>
+          <div className="social__icons-container">
             <img src={images.socialIcon1} alt="social-media-icons" />
             <img src={images.socialIcon2} alt="social-media-icons" />
             <img src={images.socialIcon3} alt="social-media-icons" />
@@ -26,11 +28,11 @@ const Footer = () => {
         </div>
         <div className="footer__segment footer__segment-3">
           <div>community</div>
-          <div>Home</div>
-          <div>About us</div>
-          <div>our courses</div>
-          <div>testimonials</div>
-          <div>our community</div>
+          <div>Help center</div>
+          <div>Partner</div>
+          <div>suggestions</div>
+          <div>blog</div>
+          <div>newsletter</div>
         </div>
         <div className="footer__segment footer__segment-4">
           <div>Subscribe us</div>

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Flexbox } from "../../styles/Globals";
+import { device } from "../../styles/Breakpoints";
 
 export const StyleCoursesContainer = styled.div`
   ${Flexbox};
@@ -7,12 +8,40 @@ export const StyleCoursesContainer = styled.div`
   background: ${(props) => props.theme.colors.aboutBackground};
   color: ${(props) => props.theme.colors.neutral};
   min-height: 100vh;
-  padding: ${(props) => props.theme.paddings.navPads};
+  padding: ${(props) => props.theme.paddings.navPadsXXL};
   position: relative;
+
+  @media ${device.xl} {
+    padding: ${(props) => props.theme.paddings.navPadsXL};
+  }
+  @media ${device.lg} {
+    padding: ${(props) => props.theme.paddings.navPadsL};
+  }
+  @media ${device.md} {
+    padding: ${(props) => props.theme.paddings.navPadsMD};
+    flex-direction: column;
+  }
+  @media ${device.sm} {
+    padding: ${(props) => props.theme.paddings.navPadsSM};
+  }
+  @media ${device.xs} {
+    padding: ${(props) => props.theme.paddings.navPadsXSM};
+  }
   > img {
     position: absolute;
     top: 10%;
     left: 10%;
+    @media ${device.md} {
+      top: 7%;
+      left: 5%;
+    }
+    @media ${device.sm} {
+      width: 2rem;
+    }
+    @media ${device.xs} {
+      width: 1.5rem;
+      top: 5%;
+    }
   }
   div.courses__heading-text {
     ${Flexbox};
@@ -25,6 +54,24 @@ export const StyleCoursesContainer = styled.div`
       font-size: 3.5rem;
       line-height: ${(props) => props.theme.lineHeight.lhLarge};
       padding-top: 3rem;
+      @media ${device.lg} {
+        font-size: 3rem;
+        line-height: ${(props) => props.theme.lineHeight.lhLarge};
+      }
+      @media ${device.md} {
+        font-size: 4rem;
+        line-height: ${(props) => props.theme.lineHeight.lhXtraLarge};
+        text-align: center;
+      }
+      @media ${device.md} {
+        font-size: 3rem;
+        line-height: ${(props) => props.theme.lineHeight.lhLarge};
+      }
+      @media ${device.xs} {
+        font-size: 2.5rem;
+        line-height: 50px;
+        margin-top: 7rem;
+      }
     }
     > div:last-child {
       font-weight: ${(props) => props.theme.fontWeight.semiBold};
@@ -32,6 +79,31 @@ export const StyleCoursesContainer = styled.div`
       width: 60%;
       margin-top: 2rem;
       text-align: center;
+      @media ${device.lg} {
+        font-size: 0.8rem;
+        line-height: ${(props) => props.theme.lineHeight.lhSmall};
+        margin-top: 0.5rem;
+      }
+      @media ${device.md} {
+        font-size: 1rem;
+        line-height: ${(props) => props.theme.lineHeight.lhMedium};
+        margin-top: 1rem;
+        width: 80%;
+        align-self: center;
+        text-align: center;
+      }
+      @media ${device.sm} {
+        font-size: 0.8rem;
+        line-height: ${(props) => props.theme.lineHeight.lhSmall};
+        margin-top: 1rem;
+        width: 90%;
+      }
+      @media ${device.xs} {
+        font-size: 0.6rem;
+        line-height: ${(props) => props.theme.lineHeight.lhSmall};
+        margin-top: 1rem;
+        width: 90%;
+      }
     }
   }
 
@@ -59,10 +131,15 @@ export const StyleCoursesContainer = styled.div`
     grid-template-columns: repeat(3, auto);
     gap: 1rem;
     margin-top: 3rem;
-    /* background-color: red; */
+    @media ${device.md} {
+      grid-template-columns: repeat(2, auto);
+    }
+    @media ${device.sm} {
+      grid-template-columns: auto;
+    }
     div.courses__card-container {
       background: ${(props) => props.theme.colors.primaryTextColor};
-      /* background-color: red; */
+
       border-radius: 16px;
       padding: 1rem;
       div.overflow {

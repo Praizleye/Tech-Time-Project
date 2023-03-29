@@ -29,14 +29,16 @@ const Home = () => {
         </div>
 
         <div className="previews__container">
-          <div>
-            <img src={images.Avartar1} alt="avatar-image-1" />
-            <img src={images.Avartar2} alt="avatar-image-2" />
-            <img src={images.Avartar3} alt="avatar-image-3" />
-            <img src={images.Avartar4} alt="avatar-image-4" />
-            <img src={images.Avartar5} alt="avatar-image-5" />
+          <div className="preview__img-container">
+            <div className="positionRelative">
+              <img src={images.Avartar1} alt="avatar-image-1" />
+              <img src={images.Avartar2} alt="avatar-image-2" />
+              <img src={images.Avartar3} alt="avatar-image-3" />
+              <img src={images.Avartar4} alt="avatar-image-4" />
+              <img src={images.Avartar5} alt="avatar-image-5" />
+            </div>
           </div>
-          <div className="previews">
+          <div className="preview__text-container">
             <div>255k+</div>
             <div>Previews</div>
           </div>
@@ -52,7 +54,11 @@ const Home = () => {
         <img src={images.stackImage5} alt="tech-stack-asset" />
       </StyleHeroImage>
       <Partners />
-      <img src={images.stackImage6} alt="svg-asset-decoration" />
+      <img
+        className="twist"
+        src={images.stackImage6}
+        alt="svg-asset-decoration"
+      />
       <img
         src={images.genDecor3}
         alt="svg-asset-decoration"

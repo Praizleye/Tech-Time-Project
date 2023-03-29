@@ -64,10 +64,7 @@ const FAQ = () => {
           <div className="faq__container" key={index}>
             <div className="faq__title" onClick={() => toggleFaqItem(index)}>
               <div>{item.title}</div>
-              {/* <div className="btn">
-                <div className="vertical"></div>
-                <div className="horizontal"></div>
-              </div> */}
+
               <div>{index === active ? "-" : "+"}</div>
             </div>
             <div className="faq__content">

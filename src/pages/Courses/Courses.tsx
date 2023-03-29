@@ -2,7 +2,7 @@ import { StyleCoursesContainer } from "./Styled.Courses";
 import images from "../../constants/image";
 const Courses = () => {
   return (
-    <StyleCoursesContainer>
+    <StyleCoursesContainer id="courses">
       <img src={images.coursesdecorImage} alt="a-tiny-decro-svg-img" />
       <div className="courses__heading-text">
         <div>browse our popular courses</div>

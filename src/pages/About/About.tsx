@@ -11,7 +11,7 @@ import {
 import { images } from "../../constants";
 const About = () => {
   return (
-    <StyleAboutContainer>
+    <StyleAboutContainer id="about">
       <StyleAboutContainerOne>
         <StyleAboutTextContentContainer>
           <div className="about__text-heading">
@@ -25,10 +25,23 @@ const About = () => {
           </div>
           <button className="btn__view-courses">view courses</button>
           <div className="class__options">
-            <button className="class class__option-1">audio classes</button>
-            <button className="class class__option-2">live classes</button>
-            <button className="class class__option-3">recorded classes</button>
-            <button className="class class__option-4">50+ notes</button>
+            <button className="class class__option-1">
+              <img src={images.buttonIcon1} alt="icon-for-btn" />
+
+              <div>audio classes</div>
+            </button>
+            <button className="class class__option-2">
+              <img src={images.buttonIcon2} alt="icon-for-btn" />
+              <div>live classes</div>
+            </button>
+            <button className="class class__option-3">
+              <img src={images.buttonIcon3} alt="icon-for-btn" />
+              <div>recorded classes</div>
+            </button>
+            <button className="class class__option-4">
+              <img src={images.buttonIcon4} alt="icon-for-btn" />
+              <div>50+ notes</div>
+            </button>
           </div>
         </StyleAboutTextContentContainer>
         <StyleAboutImageContentContainer>

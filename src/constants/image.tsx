@@ -23,10 +23,8 @@ import stackImage5 from "../assets/HeroImages/decorAsset5.png";
 import stackImage6 from "../assets/HeroImages/decorAsset6.svg";
 import ArrowOutward from "../assets/HeroImages/arrow_outward.svg";
 
-import zoom from "../assets/partnerImages/zoom.svg";
 import dropbox from "../assets/partnerImages/dropbox.svg";
 import monday from "../assets/partnerImages/monday.svg";
-import stripe from "../assets/partnerImages/stripe.svg";
 import slack from "../assets/partnerImages/slack.svg";
 
 import aboutImage1 from "../assets/AboutImages/aboutImage1.png";
@@ -40,6 +38,10 @@ import aboutIcon4 from "../assets/AboutImages/aboutIcon4.svg";
 import decorIcon2 from "../assets/AboutImages/decorIcon2.svg";
 import decorIcon3 from "../assets/AboutImages/decorIcon3.svg";
 import decorIcon4 from "../assets/AboutImages/decorIcon4.svg";
+import buttonIcon1 from "../assets/AboutImages/buttonIcon1.svg";
+import buttonIcon2 from "../assets/AboutImages/buttonIcon2.svg";
+import buttonIcon3 from "../assets/AboutImages/buttonIcon3.svg";
+import buttonIcon4 from "../assets/AboutImages/buttonIcon4.svg";
 
 import instructorImage1 from "../assets/CoursesImages/instructorImage1.png";
 import instructorImage2 from "../assets/CoursesImages/instructorImage2.png";
@@ -98,9 +100,7 @@ export default {
   stackImage6,
   ArrowOutward,
 
-  zoom,
   slack,
-  stripe,
   dropbox,
   monday,
 
@@ -111,7 +111,10 @@ export default {
   aboutIcon2,
   aboutIcon3,
   aboutIcon4,
-
+  buttonIcon1,
+  buttonIcon2,
+  buttonIcon3,
+  buttonIcon4,
   decorIcon2,
   decorIcon3,
   decorIcon4,

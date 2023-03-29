@@ -3,7 +3,7 @@ import { StyleCommunityContainer } from "./styled.Community";
 import image from "../../constants/image";
 const Community = () => {
   return (
-    <StyleCommunityContainer>
+    <StyleCommunityContainer id="community">
       <div>join our community</div>
       <div>
         Are you ready to connect with the future talent of the tech world

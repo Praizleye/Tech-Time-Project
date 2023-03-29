@@ -1,5 +1,3 @@
-import { DefaultTheme } from "styled-components";
-
 export const theme = {
   colors: {
     primary: "#004DB3",
@@ -23,6 +21,12 @@ export const theme = {
   },
   paddings: {
     navPads: "0 3rem",
+    navPadsXXL: "0 6rem",
+    navPadsXL: "0 4rem",
+    navPadsL: "0 3rem",
+    navPadsMD: "0 2rem",
+    navPadsSM: "0 1rem",
+    navPadsXSM: "0 1rem",
     navItemPads: "0 0.625rem",
     customPads: "0.5rem 1rem",
     container: "15px",
