@@ -12,6 +12,8 @@ export const GlobalStyles = createGlobalStyle<Props>`
 body{
   overflow-x: hidden;
   min-height: 100vh;
+  position: relative;
+  width: 100%;
   text-rendering: optimizeSpeed;
   color: ${(props) => props.theme.colors.primaryTextColor};
   background: ${(props) => props.theme.colors.backgroundPrimary}; 
