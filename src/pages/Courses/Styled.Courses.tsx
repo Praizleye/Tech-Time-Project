@@ -63,9 +63,10 @@ export const StyleCoursesContainer = styled.div`
         line-height: ${(props) => props.theme.lineHeight.lhXtraLarge};
         text-align: center;
       }
-      @media ${device.md} {
+      @media ${device.sm} {
         font-size: 3rem;
         line-height: ${(props) => props.theme.lineHeight.lhLarge};
+        text-align: center;
       }
       @media ${device.xs} {
         font-size: 2.5rem;

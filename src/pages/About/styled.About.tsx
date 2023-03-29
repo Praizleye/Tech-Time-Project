@@ -60,16 +60,18 @@ export const StyleAboutTextContentContainer = styled.div`
     @media ${device.md} {
       font-size: 4rem;
       line-height: ${(props) => props.theme.lineHeight.lhXtraLarge};
+      text-align: center;
     }
-    @media ${device.md} {
+    @media ${device.sm} {
       font-size: 3rem;
       line-height: ${(props) => props.theme.lineHeight.lhLarge};
-      text-align: center;
+      margin: ${(props) => props.theme.paddings.navPadsSM};
     }
     @media ${device.xs} {
       font-size: 2.5rem;
       line-height: 50px;
-      margin-top: 8rem;
+      margin: 1rem 2rem 0;
+      padding: ${(props) => props.theme.paddings.navPadsSM};
     }
     > img {
       position: absolute;
@@ -110,8 +112,10 @@ export const StyleAboutTextContentContainer = styled.div`
     @media ${device.xs} {
       font-size: 0.6rem;
       line-height: ${(props) => props.theme.lineHeight.lhSmall};
-      margin-top: 1rem;
-      width: 90%;
+      margin: 1rem 2rem 0;
+      width: 70%;
+      padding: ${(props) => props.theme.paddings.navPadsSM};
+      background: green;
     }
   }
   button.btn__view-courses {
@@ -131,13 +135,16 @@ export const StyleAboutTextContentContainer = styled.div`
     margin-top: 2rem;
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-columns: auto auto;
+
     grid-gap: 1rem;
     width: 60%;
     @media ${device.md} {
       width: max-content;
       place-items: center;
       margin: 3rem auto;
+    }
+    @media (max-width: 500px) {
+      grid-template-columns: auto;
     }
 
     button.class {
@@ -148,6 +155,7 @@ export const StyleAboutTextContentContainer = styled.div`
       width: max-content;
       ${Flexbox};
       gap: 10px;
+
       &:hover {
         transform: scaleX(1.1);
         font-weight: ${(props) => props.theme.fontWeight.Bold};
