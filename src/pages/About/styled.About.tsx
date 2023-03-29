@@ -115,7 +115,6 @@ export const StyleAboutTextContentContainer = styled.div`
       /* margin: 1rem 2rem 0; */
       width: 70%;
       /* padding: ${(props) => props.theme.paddings.navPadsSM}; */
-      background: green;
     }
   }
   button.btn__view-courses {
